@@ -1,9 +1,9 @@
 x=raw_input()
 y=raw_input()
-for i in y:
-    if(i=="a" or i=="o" or i=="e" or i=="i" or i=="u"):
-        count=0
-    else:
-        z=i
+def anti_vowel(text):
+    for i in "aeiouAEIOU":
+        text=text.replace(i,' ')
+    return text
+z=anti_vowel(y)
 w=z[::-1]
 print(w)
